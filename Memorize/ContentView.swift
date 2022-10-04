@@ -13,12 +13,17 @@ var vehicals = ["🚊", "🚀", "🚁", "🚗", "✈️", "🚲", "🚜", "🛴"
 var animals = ["🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🦁","🐮"]
 var flags = ["🏳️‍⚧️","🇺🇳","🇩🇿","🇦🇫","🇦🇷","🇦🇪","🇦🇼","🇴🇲","🇦🇿","🇪🇬","🇪🇹","🇮🇪"]
 
-func widthThatBestFits(cardCount: Int) -> CGFloat {
-    var bestWidth: CGFloat
+func widthThatBestFits(cardCount: Int) -> CGFloat { //couldn't get the precise scrollview size, so just roughly compute bestWidth number. It could run perfectly on iPhone 14 Pro.
+    var bestWidth = 150
+    var row: Int = Int(ceil(Double(cardCount/(300/bestWidth))))
+    var bestHeight = bestWidth * 3/2
     
-    
-    
-    return bestWidth
+    while (row * bestHeight > 350) {
+        bestWidth = bestWidth - 10
+        row = Int(ceil(Double(cardCount/(300/bestWidth))))
+        bestHeight = bestWidth * 3/2
+    }
+    return CGFloat(bestWidth)
 }
 
 struct ContentView: View {
@@ -34,7 +39,7 @@ struct ContentView: View {
             ScrollView{
                 // try if here
                 let random = Int.random(in: 4..<emojis.count)
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]){
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: widthThatBestFits(cardCount: random)))]){
                     ForEach(emojis[0..<random], id: \.self){ emoji in //random appearing cards number
                         CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
                     }
@@ -111,6 +116,7 @@ struct logoView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
             
     }
 }

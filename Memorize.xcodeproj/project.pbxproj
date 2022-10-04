@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34F5FF8228EC82F600EF9302 /* Memorize_animals.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F5FF8028EC82F600EF9302 /* Memorize_animals.png */; };
+		34F5FF8328EC82F600EF9302 /* Memorize_vehicals.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F5FF8128EC82F600EF9302 /* Memorize_vehicals.png */; };
 		34FB9BD328E703AF00C00815 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB9BD228E703AF00C00815 /* MemorizeApp.swift */; };
 		34FB9BD528E703AF00C00815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB9BD428E703AF00C00815 /* ContentView.swift */; };
 		34FB9BD728E703B100C00815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FB9BD628E703B100C00815 /* Assets.xcassets */; };
@@ -14,9 +16,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34F5FF8028EC82F600EF9302 /* Memorize_animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memorize_animals.png; sourceTree = "<group>"; };
+		34F5FF8128EC82F600EF9302 /* Memorize_vehicals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memorize_vehicals.png; sourceTree = "<group>"; };
+		34F5FF8428EC869500EF9302 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		34FB9BCF28E703AF00C00815 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FB9BD228E703AF00C00815 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
-		34FB9BD428E703AF00C00815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34FB9BD428E703AF00C00815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		34FB9BD628E703B100C00815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34FB9BD928E703B100C00815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +60,7 @@
 				34FB9BD428E703AF00C00815 /* ContentView.swift */,
 				34FB9BD628E703B100C00815 /* Assets.xcassets */,
 				34FB9BD828E703B100C00815 /* Preview Content */,
+				34F5FF8428EC869500EF9302 /* README.md */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -62,6 +68,8 @@
 		34FB9BD828E703B100C00815 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				34F5FF8028EC82F600EF9302 /* Memorize_animals.png */,
+				34F5FF8128EC82F600EF9302 /* Memorize_vehicals.png */,
 				34FB9BD928E703B100C00815 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -126,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				34FB9BDA28E703B100C00815 /* Preview Assets.xcassets in Resources */,
+				34F5FF8228EC82F600EF9302 /* Memorize_animals.png in Resources */,
+				34F5FF8328EC82F600EF9302 /* Memorize_vehicals.png in Resources */,
 				34FB9BD728E703B100C00815 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +280,7 @@
 				DEVELOPMENT_TEAM = X562Q6NXM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +310,7 @@
 				DEVELOPMENT_TEAM = X562Q6NXM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
