@@ -1,4 +1,4 @@
-# Assignments1_CS193p
+# Assignments_CS193p
 ## Assignments1
 ### Required Tasks
 - [x] 3 themes
